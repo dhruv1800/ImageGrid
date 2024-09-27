@@ -15,10 +15,11 @@
 		9FEF58982CA66FC1002EB3C5 /* ImageGridBattleBucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58972CA66FC1002EB3C5 /* ImageGridBattleBucksTests.swift */; };
 		9FEF58A22CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58A12CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift */; };
 		9FEF58A42CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58A32CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift */; };
-		9FEF58B72CA697C8002EB3C5 /* GridUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */; };
 		9FEF58B92CA6982E002EB3C5 /* GridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58B82CA6982E002EB3C5 /* GridModel.swift */; };
 		9FEF58BB2CA6985C002EB3C5 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58BA2CA6985C002EB3C5 /* GridViewModel.swift */; };
 		9FEF58C12CA6ADC6002EB3C5 /* HTTPUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */; };
+		9FEF58C52CA6B143002EB3C5 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58C42CA6B143002EB3C5 /* ImageDetailView.swift */; };
+		9FEF58C82CA6B5DF002EB3C5 /* CommonUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58C72CA6B5DF002EB3C5 /* CommonUIComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +51,11 @@
 		9FEF589D2CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGridBattleBucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF58A12CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridBattleBucksUITests.swift; sourceTree = "<group>"; };
 		9FEF58A32CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridBattleBucksUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIComponent.swift; sourceTree = "<group>"; };
 		9FEF58B82CA6982E002EB3C5 /* GridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModel.swift; sourceTree = "<group>"; };
 		9FEF58BA2CA6985C002EB3C5 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPUtilities.swift; sourceTree = "<group>"; };
+		9FEF58C42CA6B143002EB3C5 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		9FEF58C72CA6B5DF002EB3C5 /* CommonUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUIComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,6 @@
 		9FEF58B12CA69527002EB3C5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9FEF58B42CA69559002EB3C5 /* ViewComponent */,
 				9FEF58862CA66FBF002EB3C5 /* GridView.swift */,
 			);
 			path = View;
@@ -174,17 +175,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		9FEF58B42CA69559002EB3C5 /* ViewComponent */ = {
-			isa = PBXGroup;
-			children = (
-				9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */,
-			);
-			path = ViewComponent;
-			sourceTree = "<group>";
-		};
 		9FEF58BC2CA6AD7D002EB3C5 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				9FEF58C22CA6B08A002EB3C5 /* ImageDetail */,
 				9FEF58B02CA69513002EB3C5 /* Grid */,
 			);
 			path = Module;
@@ -193,6 +187,7 @@
 		9FEF58BD2CA6AD86002EB3C5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				9FEF58C62CA6B5AD002EB3C5 /* UIComponent */,
 				9FEF58BE2CA6AD8F002EB3C5 /* HTTPUtilities */,
 			);
 			path = Shared;
@@ -204,6 +199,30 @@
 				9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */,
 			);
 			path = HTTPUtilities;
+			sourceTree = "<group>";
+		};
+		9FEF58C22CA6B08A002EB3C5 /* ImageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58C32CA6B096002EB3C5 /* View */,
+			);
+			path = ImageDetail;
+			sourceTree = "<group>";
+		};
+		9FEF58C32CA6B096002EB3C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58C42CA6B143002EB3C5 /* ImageDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FEF58C62CA6B5AD002EB3C5 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58C72CA6B5DF002EB3C5 /* CommonUIComponent.swift */,
+			);
+			path = UIComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,12 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FEF58BB2CA6985C002EB3C5 /* GridViewModel.swift in Sources */,
+				9FEF58C52CA6B143002EB3C5 /* ImageDetailView.swift in Sources */,
 				9FEF58B92CA6982E002EB3C5 /* GridModel.swift in Sources */,
 				9FEF58872CA66FBF002EB3C5 /* GridView.swift in Sources */,
 				9FEF58892CA66FBF002EB3C5 /* Item.swift in Sources */,
 				9FEF58C12CA6ADC6002EB3C5 /* HTTPUtilities.swift in Sources */,
 				9FEF58852CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift in Sources */,
-				9FEF58B72CA697C8002EB3C5 /* GridUIComponent.swift in Sources */,
+				9FEF58C82CA6B5DF002EB3C5 /* CommonUIComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

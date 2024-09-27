@@ -9,41 +9,49 @@ import SwiftUI
 import SwiftData
 
 struct GridView: View {
-    @StateObject private var viewModel = GalleryViewModel()
-        
-        let columns = [
-            GridItem(.flexible()),
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ]
-        
-        var body: some View {
-            NavigationView {
-                ScrollView {
-                    LazyVGrid(columns: columns, spacing: 10) {
-                        ForEach(viewModel.photos) { photo in
-                            VStack {
-                                GridUIComponent(url: photo.thumbnailUrl)
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 100, height: 100)
-                                    .clipped()
-                                Text(photo.title)
-                                    .font(.caption)
-                                    .lineLimit(2)
-                            }
-                        }
-                    }
-                    .padding()
-                }
-                .navigationTitle("Image Gallery")
-                .onAppear {
-                    viewModel.fetchPhotos()
-                }
-            }
-        }
+    @ObservedObject var viewModel: GalleryViewModel
+       @State private var selectedPhotoIndex: Int = 0
+       @State private var isShowingDetailView = false
+       
+       var body: some View {
+           NavigationView {
+               ScrollView {
+                   LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))], spacing: 10) {
+                       ForEach(viewModel.photos.indices, id: \.self) { index in
+                           let photo = viewModel.photos[index]
+                           VStack {
+                               AsyncImageView(url: photo.thumbnailUrl)
+                                   .frame(width: 100, height: 100)
+                                   .clipShape(RoundedRectangle(cornerRadius: 10))
+                                   .onTapGesture {
+                                       selectedPhotoIndex = index
+                                       isShowingDetailView = true
+                                   }
+                               
+                               Text(photo.title)
+                                   .font(.caption)
+                                   .lineLimit(1)
+                                   .padding(.top, 5)
+                           }
+                       }
+                   }
+                   .padding()
+               }
+               .navigationTitle("Image Gallery")
+               .onAppear {
+                   viewModel.fetchPhotos()
+               }
+               .background(
+                   NavigationLink(destination: ImageDetailView(selectedPhotoIndex: $selectedPhotoIndex, photos: viewModel.photos),
+                                  isActive: $isShowingDetailView) {
+                       EmptyView()
+                   }
+               )
+           }
+       }
 }
 
 #Preview {
-    GridView()
+    GridView(viewModel: GalleryViewModel())
         
 }
