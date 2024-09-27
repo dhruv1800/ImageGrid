@@ -42,8 +42,12 @@ struct GridView: View {
                    viewModel.fetchPhotos()
                }
                .background(
-                   NavigationLink(destination: ImageDetailView(selectedPhotoIndex: $selectedPhotoIndex, photos: viewModel.photos),
-                                  isActive: $isShowingDetailView) {
+                   NavigationLink(
+                       destination: ImageDetailView(selectedPhotoIndex: $selectedPhotoIndex, photos: viewModel.photos)
+                        .transition(.scale)
+                           .animation(.easeInOut(duration: 0.5)),
+                       isActive: $isShowingDetailView
+                   ) {
                        EmptyView()
                    }
                )
