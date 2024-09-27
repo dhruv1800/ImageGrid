@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9FEF58852CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58842CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift */; };
-		9FEF58872CA66FBF002EB3C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58862CA66FBF002EB3C5 /* ContentView.swift */; };
+		9FEF58872CA66FBF002EB3C5 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58862CA66FBF002EB3C5 /* GridView.swift */; };
 		9FEF58892CA66FBF002EB3C5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58882CA66FBF002EB3C5 /* Item.swift */; };
 		9FEF588B2CA66FC1002EB3C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEF588A2CA66FC1002EB3C5 /* Assets.xcassets */; };
 		9FEF588E2CA66FC1002EB3C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEF588D2CA66FC1002EB3C5 /* Preview Assets.xcassets */; };
 		9FEF58982CA66FC1002EB3C5 /* ImageGridBattleBucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58972CA66FC1002EB3C5 /* ImageGridBattleBucksTests.swift */; };
 		9FEF58A22CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58A12CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift */; };
 		9FEF58A42CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58A32CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift */; };
+		9FEF58B72CA697C8002EB3C5 /* GridUIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */; };
+		9FEF58B92CA6982E002EB3C5 /* GridModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58B82CA6982E002EB3C5 /* GridModel.swift */; };
+		9FEF58BB2CA6985C002EB3C5 /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58BA2CA6985C002EB3C5 /* GridViewModel.swift */; };
+		9FEF58C12CA6ADC6002EB3C5 /* HTTPUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		9FEF58812CA66FBF002EB3C5 /* ImageGridBattleBucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGridBattleBucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF58842CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridBattleBucksApp.swift; sourceTree = "<group>"; };
-		9FEF58862CA66FBF002EB3C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FEF58862CA66FBF002EB3C5 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		9FEF58882CA66FBF002EB3C5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9FEF588A2CA66FC1002EB3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FEF588D2CA66FC1002EB3C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -46,6 +50,10 @@
 		9FEF589D2CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGridBattleBucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEF58A12CA66FC1002EB3C5 /* ImageGridBattleBucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridBattleBucksUITests.swift; sourceTree = "<group>"; };
 		9FEF58A32CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridBattleBucksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridUIComponent.swift; sourceTree = "<group>"; };
+		9FEF58B82CA6982E002EB3C5 /* GridModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridModel.swift; sourceTree = "<group>"; };
+		9FEF58BA2CA6985C002EB3C5 /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
+		9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,9 @@
 		9FEF58832CA66FBF002EB3C5 /* ImageGridBattleBucks */ = {
 			isa = PBXGroup;
 			children = (
+				9FEF58BD2CA6AD86002EB3C5 /* Shared */,
+				9FEF58BC2CA6AD7D002EB3C5 /* Module */,
 				9FEF58842CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift */,
-				9FEF58862CA66FBF002EB3C5 /* ContentView.swift */,
 				9FEF58882CA66FBF002EB3C5 /* Item.swift */,
 				9FEF588A2CA66FC1002EB3C5 /* Assets.xcassets */,
 				9FEF588C2CA66FC1002EB3C5 /* Preview Content */,
@@ -128,6 +137,73 @@
 				9FEF58A32CA66FC1002EB3C5 /* ImageGridBattleBucksUITestsLaunchTests.swift */,
 			);
 			path = ImageGridBattleBucksUITests;
+			sourceTree = "<group>";
+		};
+		9FEF58B02CA69513002EB3C5 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58B32CA69538002EB3C5 /* Model */,
+				9FEF58B22CA69531002EB3C5 /* ViewModel */,
+				9FEF58B12CA69527002EB3C5 /* View */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		9FEF58B12CA69527002EB3C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58B42CA69559002EB3C5 /* ViewComponent */,
+				9FEF58862CA66FBF002EB3C5 /* GridView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FEF58B22CA69531002EB3C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58BA2CA6985C002EB3C5 /* GridViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FEF58B32CA69538002EB3C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58B82CA6982E002EB3C5 /* GridModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FEF58B42CA69559002EB3C5 /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58B62CA697C8002EB3C5 /* GridUIComponent.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		9FEF58BC2CA6AD7D002EB3C5 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58B02CA69513002EB3C5 /* Grid */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9FEF58BD2CA6AD86002EB3C5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58BE2CA6AD8F002EB3C5 /* HTTPUtilities */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9FEF58BE2CA6AD8F002EB3C5 /* HTTPUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF58C02CA6ADC6002EB3C5 /* HTTPUtilities.swift */,
+			);
+			path = HTTPUtilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FEF58872CA66FBF002EB3C5 /* ContentView.swift in Sources */,
+				9FEF58BB2CA6985C002EB3C5 /* GridViewModel.swift in Sources */,
+				9FEF58B92CA6982E002EB3C5 /* GridModel.swift in Sources */,
+				9FEF58872CA66FBF002EB3C5 /* GridView.swift in Sources */,
 				9FEF58892CA66FBF002EB3C5 /* Item.swift in Sources */,
+				9FEF58C12CA6ADC6002EB3C5 /* HTTPUtilities.swift in Sources */,
 				9FEF58852CA66FBF002EB3C5 /* ImageGridBattleBucksApp.swift in Sources */,
+				9FEF58B72CA697C8002EB3C5 /* GridUIComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

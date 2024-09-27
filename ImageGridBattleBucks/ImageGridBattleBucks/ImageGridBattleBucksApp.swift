@@ -25,7 +25,7 @@ struct ImageGridBattleBucksApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GridView()
         }
         .modelContainer(sharedModelContainer)
     }
